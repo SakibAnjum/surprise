@@ -93,7 +93,7 @@ section{
     padding-top: 36px;
   }
   .intro .intro-wrapper .text-area h3 {
-    font-family: Sacramento;
+    font-family: Pacifico;
     font-size: 36px;
     text-transform: capitalize;
   }
@@ -113,7 +113,7 @@ section{
   display: inline-block;
   font-weight: 800;
   height: 46px;
-  line-height: 44px;
+  line-height: 42px;
   padding: 0 40px;
   text-transform: uppercase;
 }
@@ -122,26 +122,191 @@ section{
   background: rgba(255,255,255,.6);
 }
 /*----------------------------------------*/
+/*  2.  countdown CSS
+/*----------------------------------------*/
+.offer-countdown {
+  background: #66ad44 none repeat scroll 0 0;
+  padding: 25px 0;
+  color: #fff
+}
+  .countdown-title {
+  }
+.countdown-title h2 {
+  line-height: 46px;
+  margin: 0;
+}
+.countdown-area {
+  margin-left: 40px;
+}
+.cdown {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  display: inline-block;
+  height: 60px;
+  margin-right: 8px;
+  position: relative;
+  text-align: center;
+  width: 60px;
+}
+.time-count {
+  display: inline-block;
+  padding-top: 9px;
+}
+.cdown p {
+  font-size: 12px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.offer-countdown .button-area {
+  text-align: right;
+}
+  .offer-countdown .button-area a {
+    background: rgba(255, 255, 255, 1) none repeat scroll 0 0;
+    border-color: #fff;
+    border-radius: 6px;
+    border-width: 3px;
+    color: #66ad44;
+    min-width: 300px;
+    text-align: center;
+  }
+  .offer-countdown .button-area a:hover {
+  color: #66ad44;
+  background: rgba(255, 255, 255, .7) none repeat scroll 0 0
+}
+/*----------------------------------------*/
 /*  2.  Best service CSS
 /*----------------------------------------*/
 .section-title{}
-.section-title h2{}
+.section-title h2 {
+  font-family: Pacifico;
+  font-size: 40px;
+}
 .service-area{
-  padding-top:40px;
+  padding-top:70px;
 }
 .service-area .single-service {
-  background: #f3f3f3 none repeat scroll 0 0;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  border-radius: 4px;
-  padding: 30px 15px 15px;
 }
-.service-area .single-service .service-thumb{}
-.service-area .single-service .service-thumb img{}
-  .service-area .single-service .service-content {
-    padding-top: 30px;
-  }
-  .service-area .single-service .service-content .service-title {
-    font-size: 24px;
-    text-transform: uppercase;
-  }
+.service-area .single-service .service-icon {
+  background: red none repeat scroll 0 0;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #e5e5e5;
+  color: #fff;
+  display: inline-block;
+  font-size: 70px;
+  height: 160px;
+  line-height: 160px;
+  width: 160px;
+}
+.service-area .single-service .service-icon i{}
+.service-area .single-service .service-content {
+  padding-top: 30px;
+}
+.service-area .single-service .service-content .service-title {
+  font-family: work sans;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
 .service-area .single-service .service-content p{}
+/*----------------------------------------*/
+/*  2.  testimonial CSS
+/*----------------------------------------*/
+.testimonial {
+  background: #66ad44 none repeat scroll 0 0;
+  color: #fff;
+}
+  .testimonial .testimonial-details {
+    padding-top: 60px;
+  }
+.testimonial .testimonial-details .single-testmonial{}
+  .testimonial .testimonial-details .single-testmonial .testmonial-thumb {
+    display: inline-block;
+    width: 200px;
+    border-radius: 50%;
+    border: 1px solid #e5e5e5;
+    overflow: hidden;
+  }
+.testimonial .testimonial-details .single-testmonial .testmonial-thumb img{}
+.testimonial .testimonial-details .single-testmonial .testmonial-text{}
+  .testimonial .testimonial-details .single-testmonial .testmonial-text h3 {
+    margin: 0;
+    margin-top: 25px;
+  }
+.testimonial .testimonial-details .single-testmonial .testmonial-text .desi {
+  display: block;
+}
+.testimonial .testimonial-details .single-testmonial .testmonial-text p {
+  display: inline-block;
+  font-size: 19px;
+  margin-top: 30px;
+  position: relative;
+  width: 600px;
+}
+.testimonial .testimonial-details .single-testmonial .testmonial-text p::before {
+  color: #fff;
+  content: "";
+  font-family: icofont;
+  font-size: 30px;
+  left: -25px;
+  position: absolute;
+  top: -30px;
+}
+.testimonial .testimonial-details .single-testmonial .testmonial-text p::after {
+  bottom: -24px;
+  color: #fff;
+  content: "";
+  font-family: icofont;
+  font-size: 30px;
+  position: absolute;
+  right: -22px;
+}
+  /*----------------------------------------*/
+  /*  2.  our-product CSS
+  /*----------------------------------------*/
+  .our-product{}
+  .our-product .products-area {
+    padding-top: 60px;
+  }
+.our-product .products-area .single-product {
+  overflow: hidden;
+  margin-bottom: 70px;
+}
+.our-product .products-area .single-product .product-thumb {
+  width: 50%;
+  float: left;
+  padding-right: 20px;
+}
+.our-product .products-area .single-product .product-thumb img{}
+.our-product .products-area .single-product .product-details {
+  float: left;
+  width: 50%;
+}
+.our-product .products-area .single-product .product-details h3{}
+.our-product .products-area .single-product .product-details p{}
+.our-product .products-area .single-product .product-details .action{}
+.our-product .products-area .single-product .product-details .action .price {
+  font-size: 28px;
+}
+.our-product .products-area .single-product .product-details .action .price .current {
+  text-decoration: line-through;
+  font-size: 16px;
+}
+.our-product .products-area .single-product .product-details .action .button-area {
+  margin-top: 12px;
+}
+.our-product .products-area .single-product .product-details .action .button-area a {
+  border-color: #777;
+  border-radius: 4px;
+  border-width: 2px;
+  color: #333;
+  font-weight: 500;
+  height: 34px;
+  line-height: 30px;
+  margin: 0;
+  padding: 0 20px;
+}
+.our-product .products-area .single-product .product-details .action .button-area a:hover{
+  background: #444;
+  color: #fff;
+}
