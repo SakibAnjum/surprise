@@ -1,0 +1,147 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name:
+    Template URI:
+    Description: This is html5 template
+    Author:
+    Author URI:
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+    CSS INDEX
+    ===================
+
+    1. Theme Default CSS (body, link color, section etc)
+
+-----------------------------------------------------------------------------------*/
+
+/*----------------------------------------*/
+/*  1.  Theme default CSS
+/*----------------------------------------*/
+html, body {height: 100%;}
+.floatleft {float:left}
+.floatright {float:right}
+.alignleft {float:left;margin-right:15px;margin-bottom: 15px}
+.alignright {float:right;margin-left:15px;margin-bottom: 15px}
+.aligncenter {display:block;margin:0 auto 15px}
+a:focus {outline:0px solid}
+img {max-width:100%;height:auto}
+.fix {overflow:hidden}
+p {margin:0 0 15px;}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 10px;
+}
+a {transition: all 0.3s ease 0s;text-decoration:none;}
+a:hover {
+  color: #ec4445;
+  text-decoration: none;
+}
+a:active, a:hover {
+  outline: 0 none;
+}
+ul{
+list-style: outside none none;
+margin: 0;
+padding: 0
+}
+.clear{clear:both}
+body p {font-family: 'Work Sans', sans-serif;}
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+.section-table {
+  display: table;
+  width: 100%;
+}
+.section-table-cell{display: table-cell;vertical-align: middle}
+.page-wrapper {
+  height: 100%;
+}
+
+.text-white{
+  color:#fff;
+}
+section{
+  padding: 60px 0;
+}
+/*----------------------------------------*/
+/*  2.  intro CSS
+/*----------------------------------------*/
+.intro {
+  background: red;
+}
+.intro .intro-wrapper{}
+.intro .intro-wrapper .logo-area{}
+.intro .intro-wrapper .logo-area a{}
+  .intro .intro-wrapper .logo-area a img {
+    width: 200px;
+  }
+  .intro .intro-wrapper .text-area {
+    padding-bottom: 20px;
+    padding-top: 36px;
+  }
+  .intro .intro-wrapper .text-area h3 {
+    font-family: Sacramento;
+    font-size: 36px;
+    text-transform: capitalize;
+  }
+.intro .intro-wrapper .text-area h1 {
+  font-size: 58px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.intro .intro-wrapper .text-area p{}
+.intro .button-area{}
+.intro-btn {
+  border-color: #fff;
+  border-radius: 45px;
+  border-style: solid;
+  border-width: 2px;
+  color: #fff;
+  display: inline-block;
+  font-weight: 800;
+  height: 46px;
+  line-height: 44px;
+  padding: 0 40px;
+  text-transform: uppercase;
+}
+.intro-btn:hover {
+  color: red;
+  background: rgba(255,255,255,.6);
+}
+/*----------------------------------------*/
+/*  2.  Best service CSS
+/*----------------------------------------*/
+.section-title{}
+.section-title h2{}
+.service-area{
+  padding-top:40px;
+}
+.service-area .single-service {
+  background: #f3f3f3 none repeat scroll 0 0;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  padding: 30px 15px 15px;
+}
+.service-area .single-service .service-thumb{}
+.service-area .single-service .service-thumb img{}
+  .service-area .single-service .service-content {
+    padding-top: 30px;
+  }
+  .service-area .single-service .service-content .service-title {
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+.service-area .single-service .service-content p{}
