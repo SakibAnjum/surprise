@@ -197,6 +197,13 @@ section{
   line-height: 160px;
   width: 160px;
 }
+.service-area .single-service .service-icon.green{
+  background: #66ad44
+}
+.service-area .single-service .service-icon.blue{
+  background: #1d84df
+}
+
 .service-area .single-service .service-icon i{}
 .service-area .single-service .service-content {
   padding-top: 30px;
@@ -261,6 +268,75 @@ section{
   position: absolute;
   right: -22px;
 }
+/*----------------------------------------*/
+/*  2.  featured CSS
+/*----------------------------------------*/
+.featured{padding-bottom: 0}
+.featured .featured-items{
+  padding-top: 60px
+}
+.featured-item {
+  margin-bottom: 60px;
+}
+.featured-item .featured-icon {
+  background: #66AD44;
+  border-radius: 50%;
+  box-shadow: 0 0 0 6px rgba(102, 173, 68, 0.6);
+  color: #fff;
+  display: inline-block;
+  font-size: 56px;
+  height: 120px;
+  line-height: 120px;
+  width: 120px;
+}
+.featured-item .featured-icon i{}
+  .featured-item .featured-item-content {
+    margin-top: 35px;
+  }
+.featured-item .featured-item-content h3{}
+.featured-item .featured-item-content p{}
+  /*----------------------------------------*/
+  /*  2.  featured-product CSS
+  /*----------------------------------------*/
+  .featured-product {
+  padding-bottom: 0;
+}
+  .featured-products-area {
+    padding-top: 40px;
+  }
+    .featured-products-area .single-product {
+      margin-bottom: 60px;
+    }
+  .featured-products-area .single-product .product-thumb {
+    display: inline-block;
+    width: 230px;
+    position: relative;
+  }
+  .featured-products-area .single-product .product-thumb img {
+    width: 100%;
+  }
+.featured-products-area .single-product .product-thumb img.primary {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.featured-products-area .single-product:hover .primary {
+  opacity: 0;
+  transition: .4s
+}
+.featured-products-area .single-product .product-thumb img.secondary{}
+.featured-products-area .single-product .product-details{}
+.featured-products-area .single-product .product-details h3{}
+.featured-products-area .single-product .product-details p{}
+.featured-products-area .single-product .product-details .action{}
+.featured-products-area .single-product .product-details .action .price{
+  font-size: 20px
+}
+.featured-products-area .single-product .product-details .action .price .current{}
+  .featured-products-area .single-product .product-details .action .button-area {
+    margin-top: 15px;
+  }
+.featured-products-area .single-product .product-details .action .button-area a{}
   /*----------------------------------------*/
   /*  2.  our-product CSS
   /*----------------------------------------*/
@@ -288,14 +364,16 @@ section{
 .our-product .products-area .single-product .product-details .action .price {
   font-size: 28px;
 }
-.our-product .products-area .single-product .product-details .action .price .current {
+.our-product .products-area .single-product .product-details .action .price .current,
+.featured-products-area .single-product .product-details .action .price .current {
   text-decoration: line-through;
   font-size: 16px;
 }
 .our-product .products-area .single-product .product-details .action .button-area {
   margin-top: 12px;
 }
-.our-product .products-area .single-product .product-details .action .button-area a {
+.our-product .products-area .single-product .product-details .action .button-area a,
+.featured-products-area .single-product .product-details .action .button-area a {
   border-color: #777;
   border-radius: 4px;
   border-width: 2px;
@@ -306,7 +384,49 @@ section{
   margin: 0;
   padding: 0 20px;
 }
-.our-product .products-area .single-product .product-details .action .button-area a:hover{
+.our-product .products-area .single-product .product-details .action .button-area a:hover,
+.featured-products-area .single-product .product-details .action .button-area a:hover{
   background: #444;
   color: #fff;
+}
+/*----------------------------------------*/
+/*  2.  FAQ CSS
+/*----------------------------------------*/
+.faq-items {
+  padding-top: 60px;
+}
+.faq-items .panel-heading {
+  border: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding: 0;
+}
+.faq-items .panel-group .panel {
+  border-radius: 0;
+  margin-bottom: 10px;
+}
+.faq-items .panel-title a {
+  display: block;
+  padding: 10px 15px;
+  color: #fff;
+  background: #66AD44;
+}
+.faq-items .panel-title a.collapsed{position: relative}
+.faq-items .panel-title a.collapsed::before {
+  color: #fff;
+  content: "\f0a5";
+  position: absolute;
+  right: 6px;
+  top: 10px;
+  font-family: icofont;
+  font-size: 15px;
+}
+.faq-items .panel-title a::before {
+  color: #fff;
+  content: "\f074";
+  position: absolute;
+  right: 6px;
+  top: 10px;
+  font-family: icofont;
+  font-size: 15px;
 }
