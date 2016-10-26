@@ -25,7 +25,8 @@ html, body {height: 100%;}
 .alignleft {float:left;margin-right:15px;margin-bottom: 15px}
 .alignright {float:right;margin-left:15px;margin-bottom: 15px}
 .aligncenter {display:block;margin:0 auto 15px}
-a:focus {outline:0px solid}
+a:focus {outline:0px solid;text-decoration: none}
+a:active{text-decoration: none}
 img {max-width:100%;height:auto}
 .fix {overflow:hidden}
 p {margin:0 0 15px;}
@@ -80,7 +81,19 @@ section{
 /*  2.  intro CSS
 /*----------------------------------------*/
 .intro {
-  background: red;
+  background: rgba(0, 0, 0, 0) url("img/top-bg.jpg") repeat fixed center center / cover ;
+  position: relative;
+  padding: 100px 0;
+}
+.intro::before {
+  background: red none repeat scroll 0 0;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  content: "";
+  top: 0;
+  left: 0;
+  opacity: .8;
 }
 .intro .intro-wrapper{}
 .intro .intro-wrapper .logo-area{}
@@ -97,12 +110,16 @@ section{
     font-size: 36px;
     text-transform: capitalize;
   }
-.intro .intro-wrapper .text-area h1 {
-  font-size: 58px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-.intro .intro-wrapper .text-area p{}
+  .intro .intro-wrapper .text-area h1 {
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .intro .intro-wrapper .text-area p {
+    font-size: 18px;
+  }
 .intro .button-area{}
 .intro-btn {
   border-color: #fff;
@@ -139,19 +156,20 @@ section{
   margin-left: 40px;
 }
 .cdown {
-  border: 1px solid rgba(255, 255, 255, 0.7);
   display: inline-block;
   height: 60px;
   margin-right: 8px;
   position: relative;
   text-align: center;
-  width: 60px;
+  width: 80px;
 }
 .time-count {
   display: inline-block;
+  font-size: 27px;
   padding-top: 9px;
 }
 .cdown p {
+  display: inline-block;
   font-size: 12px;
   margin: 0;
   text-transform: uppercase;
@@ -176,10 +194,12 @@ section{
 /*  2.  Best service CSS
 /*----------------------------------------*/
 .section-title{}
-.section-title h2 {
-  font-family: Pacifico;
-  font-size: 40px;
-}
+  .section-title h2 {
+    font-family: Pacifico;
+    font-size: 40px;
+    text-shadow: 0 1px 1px #000;
+  }
+.section-title h2 .highlight{color: red}
 .service-area{
   padding-top:70px;
 }
@@ -223,16 +243,17 @@ section{
   background: #66ad44 none repeat scroll 0 0;
   color: #fff;
 }
-  .testimonial .testimonial-details {
-    padding-top: 60px;
-  }
+.testimonial .testimonial-details {
+  padding-top: 60px;
+}
 .testimonial .testimonial-details .single-testmonial{}
   .testimonial .testimonial-details .single-testmonial .testmonial-thumb {
-    display: inline-block;
-    width: 200px;
-    border-radius: 50%;
     border: 1px solid #e5e5e5;
+    border-radius: 50%;
+    display: inline-block;
     overflow: hidden;
+    width: 150px;
+    background: #fff;
   }
 .testimonial .testimonial-details .single-testmonial .testmonial-thumb img{}
 .testimonial .testimonial-details .single-testmonial .testmonial-text{}
@@ -248,7 +269,7 @@ section{
   font-size: 19px;
   margin-top: 30px;
   position: relative;
-  width: 600px;
+  width: 800px;
 }
 .testimonial .testimonial-details .single-testmonial .testmonial-text p::before {
   color: #fff;
@@ -406,10 +427,13 @@ section{
   margin-bottom: 10px;
 }
 .faq-items .panel-title a {
+  background: #66ad44 none repeat scroll 0 0;
+  color: #fff;
   display: block;
   padding: 10px 15px;
-  color: #fff;
-  background: #66AD44;
+  position: relative;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 .faq-items .panel-title a.collapsed{position: relative}
 .faq-items .panel-title a.collapsed::before {
@@ -423,10 +447,11 @@ section{
 }
 .faq-items .panel-title a::before {
   color: #fff;
-  content: "\f074";
-  position: absolute;
-  right: 6px;
-  top: 10px;
+  content: "";
   font-family: icofont;
-  font-size: 15px;
+  font-size: 16px;
+  position: absolute;
+  right: 7px;
+  top: 10px;
+  z-index: 9;
 }
