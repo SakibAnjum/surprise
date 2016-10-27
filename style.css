@@ -19,13 +19,12 @@
 /*----------------------------------------*/
 /*  1.  Theme default CSS
 /*----------------------------------------*/
-html, body {height: 100%;}
 .floatleft {float:left}
 .floatright {float:right}
 .alignleft {float:left;margin-right:15px;margin-bottom: 15px}
 .alignright {float:right;margin-left:15px;margin-bottom: 15px}
 .aligncenter {display:block;margin:0 auto 15px}
-a:focus {outline:0px solid;text-decoration: none}
+a:focus {outline:0px solid;text-decoration: none;color:#fff}
 a:active{text-decoration: none}
 img {max-width:100%;height:auto}
 .fix {overflow:hidden}
@@ -125,18 +124,18 @@ section{
   border-color: #fff;
   border-radius: 45px;
   border-style: solid;
-  border-width: 2px;
+  border-width: 3px;
   color: #fff;
   display: inline-block;
   font-weight: 800;
   height: 46px;
-  line-height: 42px;
+  line-height: 40px;
   padding: 0 40px;
   text-transform: uppercase;
 }
 .intro-btn:hover {
+  background: #D5D3D4 none repeat scroll 0 0;
   color: red;
-  background: rgba(255,255,255,.6);
 }
 /*----------------------------------------*/
 /*  2.  countdown CSS
@@ -146,11 +145,12 @@ section{
   padding: 25px 0;
   color: #fff
 }
-  .countdown-title {
-  }
+.countdown-title {}
 .countdown-title h2 {
   line-height: 46px;
   margin: 0;
+  font-family: pacifico;
+  font-size: 32px;
 }
 .countdown-area {
   margin-left: 40px;
@@ -177,28 +177,29 @@ section{
 .offer-countdown .button-area {
   text-align: right;
 }
-  .offer-countdown .button-area a {
-    background: rgba(255, 255, 255, 1) none repeat scroll 0 0;
-    border-color: #fff;
-    border-radius: 6px;
-    border-width: 3px;
-    color: #66ad44;
-    min-width: 300px;
-    text-align: center;
-  }
-  .offer-countdown .button-area a:hover {
+.offer-countdown .button-area a {
+  background: red none repeat scroll 0 0;
+  border-color: #fff;
+  border-radius: 0;
+  border-width: 1px;
+  color: #fff;
+  line-height: 46px;
+  text-align: center;
+  border: none;
+}
+.offer-countdown .button-area a:hover {
+  background: #fff none repeat scroll 0 0;
   color: #66ad44;
-  background: rgba(255, 255, 255, .7) none repeat scroll 0 0
 }
 /*----------------------------------------*/
 /*  2.  Best service CSS
 /*----------------------------------------*/
 .section-title{}
-  .section-title h2 {
-    font-family: Pacifico;
-    font-size: 40px;
-    text-shadow: 0 1px 1px #000;
-  }
+.section-title h2 {
+  font-family: Pacifico;
+  font-size: 40px;
+  text-shadow: 0 1px 1px #000;
+}
 .section-title h2 .highlight{color: red}
 .service-area{
   padding-top:70px;
@@ -243,9 +244,7 @@ section{
   background: #66ad44 none repeat scroll 0 0;
   color: #fff;
 }
-.testimonial .testimonial-details {
-  padding-top: 60px;
-}
+.testimonial .testimonial-details {}
 .testimonial .testimonial-details .single-testmonial{}
   .testimonial .testimonial-details .single-testmonial .testmonial-thumb {
     border: 1px solid #e5e5e5;
@@ -354,17 +353,17 @@ section{
   font-size: 20px
 }
 .featured-products-area .single-product .product-details .action .price .current{}
-  .featured-products-area .single-product .product-details .action .button-area {
-    margin-top: 15px;
-  }
+.featured-products-area .single-product .product-details .action .button-area {
+  margin-top: 15px;
+}
 .featured-products-area .single-product .product-details .action .button-area a{}
   /*----------------------------------------*/
   /*  2.  our-product CSS
   /*----------------------------------------*/
-  .our-product{}
-  .our-product .products-area {
-    padding-top: 60px;
-  }
+.our-product{}
+.our-product .products-area {
+  padding-top: 60px;
+}
 .our-product .products-area .single-product {
   overflow: hidden;
   margin-bottom: 70px;
