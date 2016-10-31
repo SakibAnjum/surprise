@@ -31,6 +31,7 @@ img {max-width:100%;height:auto}
 p {margin:0 0 15px;}
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 10px;
+  font-family: roboto slab
 }
 a {transition: all 0.3s ease 0s;text-decoration:none;}
 a:hover {
@@ -46,7 +47,7 @@ margin: 0;
 padding: 0
 }
 .clear{clear:both}
-body p {font-family: 'Work Sans', sans-serif;}
+body {font-family: 'Open Sans', sans-serif;}
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -77,12 +78,166 @@ section{
   padding: 60px 0;
 }
 /*----------------------------------------*/
+/*  2. Header CSS
+/*----------------------------------------*/
+header.scroll-header {
+  background: rgba(255, 255, 255, 1) none repeat scroll 0 0;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transition: all 0.4s ease 0s;
+  width: 100%;
+  z-index: 9999;
+  box-shadow: 0 0 41px -6px rgba(0,0,0,.2);
+}
+header.scroll-header.clse {
+  opacity: 0;
+  top:-60px;
+  transition: .4s
+}
+header {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  padding:15px 0;
+}
+header .site-logo {
+  float: left;
+  padding: 10px 0;
+}
+header .site-logo a{}
+  header .site-logo a img{
+    width: 150px;
+  }
+  header .manu-area {
+    position: relative;
+    float: right;
+  }
+  header .manu-area span.menu-button {
+    cursor: pointer;
+    font-weight: bold;
+    height: 32px;
+    line-height: 30px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 10px;
+    width: 32px;
+    border: 2px solid rgba(255,255,255,.8);
+  }
+header .menu-button.clse::after {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 -4px #fff, 0 4px #fff;
+  content: "";
+  height: 2px;
+  left: 25%;
+  margin-top: -1px;
+  position: absolute;
+  top: 50%;
+  width: 50%;
+}
+header .menu-button.open::before {
+  background: #fff none repeat scroll 0 0;
+  content: "";
+  height: 2px;
+  left: 25%;
+  margin-top: -1px;
+  position: absolute;
+  top: 50%;
+  transform: rotate(130deg);
+  width: 50%;
+}
+header .menu-button.open::after {
+  background: #fff none repeat scroll 0 0;
+  content: "";
+  height: 2px;
+  left: 25%;
+  margin-top: -1px;
+  position: absolute;
+  top: 50%;
+  transform: rotate(45deg);
+  width: 50%;
+}
+header nav.menu {
+  position: absolute;
+  right: 73px;
+  top: 15px;
+  white-space: nowrap;
+}
+header nav.menu ul{}
+header nav.menu ul li {
+  display: inline-block;
+  padding: 0 12px;
+}
+header nav.menu.open ul li{
+  opacity: 1;
+  transition: .4s;
+  transform: translateY(0px);
+  visibility: visible;
+}
+header nav.menu.open ul li:nth-of-type(1){
+  transition: .4s ease .1s
+}
+header nav.menu.open ul li:nth-of-type(2){
+  transition: .4s ease .2s
+}
+header nav.menu.open ul li:nth-of-type(3){
+  transition: .4s ease .3s
+}
+header nav.menu.open ul li:nth-of-type(4){
+  transition: .4s ease .4s
+}
+header nav.menu.open ul li:nth-of-type(5){
+  transition: .4s ease .5s
+}
+header nav.menu.open ul li:nth-of-type(6){
+  transition: .4s ease .6s
+}
+header nav.menu.open ul li:nth-of-type(7){
+  transition: .4s ease .7s
+}
+header nav.menu.open ul li:nth-of-type(8){
+  transition: .4s ease .8s
+}
+header nav.menu.open ul li:nth-of-type(9){
+  transition: .4s ease .9s
+}
+header nav.menu.open ul li:nth-of-type(10){
+  transition: .4s ease 1s
+}
+  header nav.menu.clse ul li {
+    opacity: 0;
+    transition: all 0.4s ease 0s;
+    transform: translateY(-40px);
+    visibility: hidden;
+  }
+header nav.menu ul li a {
+  color: #fff;
+  display: inline-block;
+}
+header.scroll-header .menu-button.open::before,header.scroll-header .menu-button.open::after {
+  background: red;
+}
+header.scroll-header .menu-button.clse::after {
+  background: red;
+  box-shadow: 0 -4px red, 0 4px red;
+}
+header.scroll-header .manu-area span.menu-button {
+  border: 2px solid red;
+}
+header.scroll-header nav.menu ul li a {
+  color: red;
+}
+/*----------------------------------------*/
 /*  2.  intro CSS
 /*----------------------------------------*/
 .intro {
   background: rgba(0, 0, 0, 0) url("img/top-bg.jpg") repeat fixed center center / cover ;
-  position: relative;
   padding: 100px 0;
+  position: relative;
+  padding-top: 160px;
 }
 .intro::before {
   background: red none repeat scroll 0 0;
@@ -98,7 +253,6 @@ section{
 .intro .intro-wrapper .logo-area{}
 .intro .intro-wrapper .logo-area a{}
   .intro .intro-wrapper .logo-area a img {
-    width: 200px;
   }
   .intro .intro-wrapper .text-area {
     padding-bottom: 20px;
@@ -111,10 +265,10 @@ section{
   }
   .intro .intro-wrapper .text-area h1 {
     font-size: 60px;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-top: 15px;
+    font-weight: 500;
     margin-bottom: 15px;
+    margin-top: 15px;
+    font-family: roboto slab;
   }
   .intro .intro-wrapper .text-area p {
     font-size: 18px;
@@ -198,7 +352,7 @@ section{
 .section-title h2 {
   font-family: Pacifico;
   font-size: 40px;
-  text-shadow: 0 1px 1px #000;
+  text-shadow: 0 1px 1px rgba(0,0,0,.5);
 }
 .section-title h2 .highlight{color: red}
 .service-area{
@@ -230,13 +384,28 @@ section{
   padding-top: 30px;
 }
 .service-area .single-service .service-content .service-title {
-  font-family: work sans;
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 15px;
   text-transform: capitalize;
 }
 .service-area .single-service .service-content p{}
+a.read-more-btn{
+  position: relative;
+}
+a.read-more-btn.red{
+  color: red;
+}
+a.read-more-btn.green{
+  color: #66ad44;
+}
+a.read-more-btn.blue{
+  color: #1d84df;
+}
+a.read-more-btn::after {
+  content: "\eb55";
+  font-family: icofont;
+}
 /*----------------------------------------*/
 /*  2.  testimonial CSS
 /*----------------------------------------*/
@@ -256,10 +425,9 @@ section{
   }
 .testimonial .testimonial-details .single-testmonial .testmonial-thumb img{}
 .testimonial .testimonial-details .single-testmonial .testmonial-text{}
-  .testimonial .testimonial-details .single-testmonial .testmonial-text h3 {
-    margin: 0;
-    margin-top: 25px;
-  }
+.testimonial .testimonial-details .single-testmonial .testmonial-text h3 {
+  margin: 25px 0 5px;
+}
 .testimonial .testimonial-details .single-testmonial .testmonial-text .desi {
   display: block;
 }
@@ -268,6 +436,7 @@ section{
   font-size: 19px;
   margin-top: 30px;
   position: relative;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
   width: 800px;
 }
 .testimonial .testimonial-details .single-testmonial .testmonial-text p::before {
@@ -429,10 +598,10 @@ section{
   background: #66ad44 none repeat scroll 0 0;
   color: #fff;
   display: block;
-  padding: 10px 15px;
+  font-size: 15px;
+  padding: 12px 15px;
   position: relative;
-  font-size: 14px;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 .faq-items .panel-title a.collapsed{position: relative}
 .faq-items .panel-title a.collapsed::before {
@@ -453,4 +622,45 @@ section{
   right: 7px;
   top: 10px;
   z-index: 9;
+}
+.panel-default {
+  border-color: #66AD44;
+}
+/*----------------------------------------*/
+/*  2.  Footer CSS
+/*----------------------------------------*/
+footer {
+  background: red;
+  padding: 30px 0;
+}
+.footer-logo{}
+.footer-logo a {
+  display: inline-block;
+  width: 100px;
+}
+.footer-logo a img{}
+  .footer-social-icon {
+    padding: 15px 0;
+  }
+.footer-social-icon a {
+  border: 1px solid #fff;
+  color: #fff;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  width: 30px;
+  border-radius: 2px;
+  margin: 0 1px;
+}
+.copyright-text{}
+.copyright-text span {
+  color: rgba(255,255,255,.9);
+}
+.copyright-text span a {
+  color: #fff;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.copyright-text span a:hover {
+  color: rgba(255,255,255,.8);
 }
