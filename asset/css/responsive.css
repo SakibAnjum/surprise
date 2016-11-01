@@ -40,6 +40,10 @@
 .our-product .products-area .single-product {
   text-align: center;
 }
+.testimonial .testimonial-details .single-testmonial .testmonial-text p::before,
+.testimonial .testimonial-details .single-testmonial .testmonial-text p::after {
+  display: none
+}
 }
 
 
@@ -91,6 +95,10 @@
 }
 .our-product .products-area .single-product {
   text-align: center;
+}
+.testimonial .testimonial-details .single-testmonial .testmonial-text p::before,
+.testimonial .testimonial-details .single-testmonial .testmonial-text p::after {
+  display: none
 }
 }
 

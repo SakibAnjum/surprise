@@ -1,33 +1,30 @@
-/*-----------------------------------------------------------------------------------
+/*----------------------------------------------------------------------------------
 
-    Template Name:
-    Template URI:
-    Description: This is html5 template
-    Author:
-    Author URI:
-    Version: 1.0
+      CSS INDEX
+      -----------------------------
 
------------------------------------------------------------------------------------
-
-    CSS INDEX
-    ===================
-
-    1. Theme Default CSS (body, link color, section etc)
+            01. Theme Default CSS
+            02. Preloader  CSS
+            03. Header CSS
+            04. Intro CSS
+            05. countdown CSS
+            06. Best service CSS
+            07. Testimonial CSS
+            08. Featured CSS
+            09. Featured-product CSS
+            10. Our-product CSS
+            11. FAQ CSS
+            12. Footer CSS
+            13. Index-menu CSS
 
 -----------------------------------------------------------------------------------*/
 
 /*----------------------------------------*/
 /*  1.  Theme default CSS
 /*----------------------------------------*/
-.floatleft {float:left}
-.floatright {float:right}
-.alignleft {float:left;margin-right:15px;margin-bottom: 15px}
-.alignright {float:right;margin-left:15px;margin-bottom: 15px}
-.aligncenter {display:block;margin:0 auto 15px}
 a:focus {outline:0px solid;text-decoration: none;color:#fff}
 a:active{text-decoration: none}
 img {max-width:100%;height:auto}
-.fix {overflow:hidden}
 p {margin:0 0 15px;}
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 10px;
@@ -46,7 +43,6 @@ list-style: outside none none;
 margin: 0;
 padding: 0
 }
-.clear{clear:both}
 body {font-family: 'Open Sans', sans-serif;}
 ::-moz-selection {
     background: #b3d4fc;
@@ -78,7 +74,29 @@ section{
   padding: 60px 0;
 }
 /*----------------------------------------*/
-/*  2. Header CSS
+/*  2.  Preloader  CSS
+/*----------------------------------------*/
+#preloader {
+  position: fixed;
+  left: 0; top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: #4FB5A8
+}
+.preloader-wrapper {
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 40px;
+  margin: auto;
+}
+/*----------------------------------------*/
+/*  3. Header CSS
 /*----------------------------------------*/
 header.scroll-header {
   background: rgba(255, 255, 255, 1) none repeat scroll 0 0;
@@ -108,25 +126,25 @@ header .site-logo {
   padding: 10px 0;
 }
 header .site-logo a{}
-  header .site-logo a img{
-    width: 150px;
-  }
-  header .manu-area {
-    position: relative;
-    float: right;
-  }
-  header .manu-area span.menu-button {
-    cursor: pointer;
-    font-weight: bold;
-    height: 32px;
-    line-height: 30px;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    top: 10px;
-    width: 32px;
-    border: 2px solid rgba(255,255,255,.8);
-  }
+header .site-logo a img{
+  width: 150px;
+}
+header .manu-area {
+  position: relative;
+  float: right;
+}
+header .manu-area span.menu-button {
+  cursor: pointer;
+  font-weight: bold;
+  height: 32px;
+  line-height: 30px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 10px;
+  width: 32px;
+  border: 2px solid rgba(255,255,255,.8);
+}
 header .menu-button.clse::after {
   background: #fff none repeat scroll 0 0;
   box-shadow: 0 -4px #fff, 0 4px #fff;
@@ -231,13 +249,13 @@ header.scroll-header nav.menu ul li a {
   color: red;
 }
 /*----------------------------------------*/
-/*  2.  intro CSS
+/*  4.  Intro CSS
 /*----------------------------------------*/
 .intro {
   background: rgba(0, 0, 0, 0) url("img/top-bg.jpg") repeat fixed center center / cover ;
   padding: 100px 0;
   position: relative;
-  padding-top: 160px;
+  padding-top: 100px;
 }
 .intro::before {
   background: red none repeat scroll 0 0;
@@ -252,27 +270,27 @@ header.scroll-header nav.menu ul li a {
 .intro .intro-wrapper{}
 .intro .intro-wrapper .logo-area{}
 .intro .intro-wrapper .logo-area a{}
-  .intro .intro-wrapper .logo-area a img {
-  }
-  .intro .intro-wrapper .text-area {
-    padding-bottom: 20px;
-    padding-top: 36px;
-  }
-  .intro .intro-wrapper .text-area h3 {
-    font-family: Pacifico;
-    font-size: 36px;
-    text-transform: capitalize;
-  }
-  .intro .intro-wrapper .text-area h1 {
-    font-size: 60px;
-    font-weight: 500;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    font-family: roboto slab;
-  }
-  .intro .intro-wrapper .text-area p {
-    font-size: 18px;
-  }
+.intro .intro-wrapper .logo-area a img {}
+.intro .intro-wrapper .text-area {
+  padding-bottom: 20px;
+  padding-top: 36px;
+}
+.intro .intro-wrapper .text-area h3 {
+  font-family: Pacifico;
+  font-size: 36px;
+  text-transform: capitalize;
+}
+.intro .intro-wrapper .text-area h1 {
+  font-family: open sans;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+.intro .intro-wrapper .text-area p {
+  font-size: 18px;
+}
 .intro .button-area{}
 .intro-btn {
   border-color: #fff;
@@ -292,7 +310,7 @@ header.scroll-header nav.menu ul li a {
   color: red;
 }
 /*----------------------------------------*/
-/*  2.  countdown CSS
+/*  5.  countdown CSS
 /*----------------------------------------*/
 .offer-countdown {
   background: #66ad44 none repeat scroll 0 0;
@@ -346,13 +364,13 @@ header.scroll-header nav.menu ul li a {
   color: #66ad44;
 }
 /*----------------------------------------*/
-/*  2.  Best service CSS
+/*  6.  Best service CSS
 /*----------------------------------------*/
 .section-title{}
 .section-title h2 {
   font-family: Pacifico;
   font-size: 40px;
-  text-shadow: 0 1px 1px rgba(0,0,0,.5);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 .section-title h2 .highlight{color: red}
 .service-area{
@@ -378,6 +396,15 @@ header.scroll-header nav.menu ul li a {
 .service-area .single-service .service-icon.blue{
   background: #1d84df
 }
+.service-area .single-service .service-icon.turquoise{
+  background: #4FB5A8
+}
+.service-area .single-service .service-icon.brown{
+  background: #5A4830
+}
+.service-area .single-service .service-icon.olive{
+  background: #B3BD43
+}
 
 .service-area .single-service .service-icon i{}
 .service-area .single-service .service-content {
@@ -402,12 +429,21 @@ a.read-more-btn.green{
 a.read-more-btn.blue{
   color: #1d84df;
 }
+a.read-more-btn.turquoise{
+  color: #4FB5A8;
+}
+a.read-more-btn.brown{
+  color: #5A4830;
+}
+a.read-more-btn.olive{
+  color: #B3BD43;
+}
 a.read-more-btn::after {
   content: "\eb55";
   font-family: icofont;
 }
 /*----------------------------------------*/
-/*  2.  testimonial CSS
+/*  7.  Testimonial CSS
 /*----------------------------------------*/
 .testimonial {
   background: #66ad44 none repeat scroll 0 0;
@@ -415,14 +451,14 @@ a.read-more-btn::after {
 }
 .testimonial .testimonial-details {}
 .testimonial .testimonial-details .single-testmonial{}
-  .testimonial .testimonial-details .single-testmonial .testmonial-thumb {
-    border: 1px solid #e5e5e5;
-    border-radius: 50%;
-    display: inline-block;
-    overflow: hidden;
-    width: 150px;
-    background: #fff;
-  }
+.testimonial .testimonial-details .single-testmonial .testmonial-thumb {
+  border: 1px solid #e5e5e5;
+  border-radius: 50%;
+  display: inline-block;
+  overflow: hidden;
+  width: 150px;
+  background: #fff;
+}
 .testimonial .testimonial-details .single-testmonial .testmonial-thumb img{}
 .testimonial .testimonial-details .single-testmonial .testmonial-text{}
 .testimonial .testimonial-details .single-testmonial .testmonial-text h3 {
@@ -458,7 +494,7 @@ a.read-more-btn::after {
   right: -22px;
 }
 /*----------------------------------------*/
-/*  2.  featured CSS
+/*  8.  Featured CSS
 /*----------------------------------------*/
 .featured{padding-bottom: 0}
 .featured .featured-items{
@@ -479,31 +515,33 @@ a.read-more-btn::after {
   width: 120px;
 }
 .featured-item .featured-icon i{}
-  .featured-item .featured-item-content {
-    margin-top: 35px;
-  }
-.featured-item .featured-item-content h3{}
+.featured-item .featured-item-content {
+  margin-top: 30px;
+}
+.featured-item .featured-item-content h3 {
+  margin-bottom: 15px;
+}
 .featured-item .featured-item-content p{}
-  /*----------------------------------------*/
-  /*  2.  featured-product CSS
-  /*----------------------------------------*/
-  .featured-product {
+/*----------------------------------------*/
+/*  9.  Featured-product CSS
+/*----------------------------------------*/
+.featured-product {
   padding-bottom: 0;
 }
-  .featured-products-area {
-    padding-top: 40px;
-  }
-    .featured-products-area .single-product {
-      margin-bottom: 60px;
-    }
-  .featured-products-area .single-product .product-thumb {
-    display: inline-block;
-    width: 230px;
-    position: relative;
-  }
-  .featured-products-area .single-product .product-thumb img {
-    width: 100%;
-  }
+.featured-products-area {
+  padding-top: 40px;
+}
+.featured-products-area .single-product {
+  margin-bottom: 60px;
+}
+.featured-products-area .single-product .product-thumb {
+  display: inline-block;
+  width: 230px;
+  position: relative;
+}
+.featured-products-area .single-product .product-thumb img {
+  width: 100%;
+}
 .featured-products-area .single-product .product-thumb img.primary {
   position: absolute;
   top: 0;
@@ -527,7 +565,7 @@ a.read-more-btn::after {
 }
 .featured-products-area .single-product .product-details .action .button-area a{}
   /*----------------------------------------*/
-  /*  2.  our-product CSS
+  /*  10.  our-product CSS
   /*----------------------------------------*/
 .our-product{}
 .our-product .products-area {
@@ -579,7 +617,7 @@ a.read-more-btn::after {
   color: #fff;
 }
 /*----------------------------------------*/
-/*  2.  FAQ CSS
+/*  11.  FAQ CSS
 /*----------------------------------------*/
 .faq-items {
   padding-top: 60px;
@@ -627,7 +665,7 @@ a.read-more-btn::after {
   border-color: #66AD44;
 }
 /*----------------------------------------*/
-/*  2.  Footer CSS
+/*  12.  Footer CSS
 /*----------------------------------------*/
 footer {
   background: red;
@@ -663,4 +701,23 @@ footer {
 }
 .copyright-text span a:hover {
   color: rgba(255,255,255,.8);
+}
+/*----------------------------------------*/
+/*  12.  Index-menu CSS
+/*----------------------------------------*/
+.index-menu .owl-theme .owl-controls .owl-page span {
+  background: #fff;
+  border-radius: 0;
+  height: 10px;
+  margin: 5px 5px;
+  width: 10px;
+}
+.index-menu .testimonial-carousel {
+  padding-top: 40px;
+}
+.index-menu .service-area .single-service {
+  margin-bottom: 60px;
+}
+.index-menu .intro {
+  padding-top: 140px;
 }
