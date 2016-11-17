@@ -15,7 +15,8 @@
             10. Our-product CSS
             11. FAQ CSS
             12. Footer CSS
-            13. Index-menu CSS
+            13. newsletter CSS
+            14. Index-menu CSS
 
 -----------------------------------------------------------------------------------*/
 
@@ -68,10 +69,22 @@ body {font-family: 'Open Sans', sans-serif;}
 }
 
 .text-white{
-  color:#fff;
+  color:#fff!important;
 }
 section{
   padding: 60px 0;
+}
+.magic-box{
+  align-content: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.magic-box-item{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  margin-bottom: 60px;
 }
 /*----------------------------------------*/
 /*  2.  Preloader  CSS
@@ -373,6 +386,9 @@ header.scroll-header nav.menu ul li a {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 .section-title h2 .highlight{color: red}
+.section-title p{
+  padding-top: 15px;
+}
 .service-area{
   padding-top:70px;
 }
@@ -416,7 +432,9 @@ header.scroll-header nav.menu ul li a {
   margin-bottom: 15px;
   text-transform: capitalize;
 }
-.service-area .single-service .service-content p{}
+.service-area .single-service .service-content p {
+  line-height: 24px;
+}
 a.read-more-btn{
   position: relative;
 }
@@ -500,9 +518,7 @@ a.read-more-btn::after {
 .featured .featured-items{
   padding-top: 60px
 }
-.featured-item {
-  margin-bottom: 60px;
-}
+.featured-item {}
 .featured-item .featured-icon {
   background: #66AD44;
   border-radius: 50%;
@@ -586,7 +602,10 @@ a.read-more-btn::after {
   width: 50%;
 }
 .our-product .products-area .single-product .product-details h3{}
-.our-product .products-area .single-product .product-details p{}
+.our-product .products-area .single-product .product-details p {
+  line-height: 22px;
+  font-size: 14px;
+}
 .our-product .products-area .single-product .product-details .action{}
 .our-product .products-area .single-product .product-details .action .price {
   font-size: 28px;
@@ -664,6 +683,16 @@ a.read-more-btn::after {
 .panel-default {
   border-color: #66AD44;
 }
+.panel-body {
+  font-size: 14px;
+  line-height: 24px;
+}
+.panel-body p{
+  font-size: 14px;
+  line-height: 24px;
+  padding: 0;
+  margin: 0;
+}
 /*----------------------------------------*/
 /*  12.  Footer CSS
 /*----------------------------------------*/
@@ -703,7 +732,39 @@ footer {
   color: rgba(255,255,255,.8);
 }
 /*----------------------------------------*/
-/*  12.  Index-menu CSS
+/*  13.  newsletter CSS
+/*----------------------------------------*/
+.newsletter{
+  background: #66AD44
+}
+.newsletter .newsletter-form{
+  margin-top: 40px
+}
+.newsletter .newsletter-form input {
+  background: rgba(255, 255, 255, 0.7) none repeat scroll 0 0;
+  border: 0 none;
+  color: #000;
+  cursor: pointer;
+  font-size: 14px;
+  height: 46px;
+  padding: 0 15px;
+  width: 100%;
+  font-family: roboto slab;
+}
+.newsletter .newsletter-form .name{}
+.newsletter .newsletter-form .email{}
+  .newsletter .newsletter-form .submit {
+    background: red;
+    border: 0;
+    color: #fff;
+    transition: .3s
+  }
+    .newsletter .newsletter-form .submit:hover{
+      background: #fff;
+      color: #000;
+    }
+/*----------------------------------------*/
+/*  14.  Index-menu CSS
 /*----------------------------------------*/
 .index-menu .owl-theme .owl-controls .owl-page span {
   background: #fff;
@@ -715,9 +776,7 @@ footer {
 .index-menu .testimonial-carousel {
   padding-top: 40px;
 }
-.index-menu .service-area .single-service {
-  margin-bottom: 60px;
-}
+.index-menu .service-area .single-service {}
 .index-menu .intro {
   padding-top: 140px;
 }

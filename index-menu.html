@@ -6,7 +6,7 @@
         <title>Surprise</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Place favicon.ico in the root directory -->
+    <!-- Place favicon.ico in the root directory -->
         <link rel="apple-touch-icon" sizes="72x72" href="img/icon/apple-icon-72x72.png">
         <link rel="apple-touch-icon" sizes="114x114" href="img/icon/apple-icon-114x114.png">
         <link rel="apple-touch-icon" sizes="180x180" href="img/icon/apple-icon-180x180.png">
@@ -17,13 +17,20 @@
         <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 
+
   	<!-- all css here -->
 		<!-- bootstrap v3.3.6 css -->
         <link rel="stylesheet" href="asset/css/bootstrap.min.css">
 		<!-- animate css -->
         <link rel="stylesheet" href="asset/css/animate.css">
-		<!-- spinkit css -->
+		<!-- meanmenu css -->
+        <link rel="stylesheet" href="asset/css/meanmenu.min.css">
+		<!-- owl.carousel css -->
+        <link rel="stylesheet" href="asset/css/owl.carousel.css">
+    <!-- spinkit css -->
         <link rel="stylesheet" href="asset/css/spinkit.css">
+    <!-- meanmenu css -->
+        <link rel="stylesheet" href="asset/css/meanmenu.min.css">
 		<!-- icofont css -->
         <link rel="stylesheet" href="asset/css/icofont.css">
 		<!-- style css -->
@@ -33,14 +40,14 @@
 		<!-- modernizr css -->
         <script src="asset/js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <body>
+    <body class="index-menu">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
       <!-- preloader start -->
-      <div id="preloader">
+        <div id="preloader">
           <div class="preloader-wrapper">
             <div class="sk-spinner sk-spinner-double-bounce">
               <div class="sk-double-bounce1"></div>
@@ -49,15 +56,94 @@
           </div>
         </div>
       <!-- preloader end -->
-      <div class="page-wrapper">
+        <div class="page-wrapper">
+      <!-- scroll header start -->
+          <header class="scroll-header clse hidden-xs">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="site-logo">
+                    <a href="#"><img src="img/header-logo-red.png" data-rjs="img/2x/header-logo-red.png" alt=""></a>
+                  </div>
+                  <div class="manu-area">
+                    <span class="menu-button clse"></span>
+                    <nav  class="menu clse">
+                      <ul>
+                        <li><a href="#intro">Top</a></li>
+                        <li><a href="#service">Our Service</a></li>
+                        <li><a href="#testimonial">Testimonials</a></li>
+                        <li><a href="#newsletter">Newsletter</a></li>
+                        <li><a href="#product">Our Products</a></li>
+                        <li><a href="#faq">Faq</a></li>
+                        <li><a href="#footer">Bottom</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+      <!-- scroll header end -->
+      <!-- Header start -->
+          <header class="hidden-xs">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="site-logo">
+                    <a href="#"><img src="img/header-logo.png" data-rjs="img/2x/header-logo.png"  alt=""></a>
+                  </div>
+                  <div class="manu-area">
+                    <span class="menu-button clse"></span>
+                    <nav  class="menu clse">
+                      <ul>
+                        <li><a href="#intro">Top</a></li>
+                        <li><a href="#service">Our Service</a></li>
+                        <li><a href="#testimonial">Testimonials</a></li>
+                        <li><a href="#newsletter">Newsletter</a></li>
+                        <li><a href="#product">Our Products</a></li>
+                        <li><a href="#faq">Faq</a></li>
+                        <li><a href="#footer">Bottom</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+      <!-- Header end -->
+      <!-- mobile menu start -->
+          <div class="mobile-menu-area visible-xs">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="mobile-menu">
+                    <nav id="manu-active">
+                      <div class="menu-main-menu-container">
+                        <ul  class="menu">
+                          <li><a href="#intro">Top</a></li>
+                          <li><a href="#service">Our Service</a></li>
+                          <li><a href="#testimonial">Testimonials</a></li>
+                          <li><a href="#newsletter">Newsletter</a></li>
+                          <li><a href="#product">Our Products</a></li>
+                          <li><a href="#faq">Faq</a></li>
+                          <li><a href="#footer">Bottom</a></li>
+                        </ul>
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      <!-- mobile menu end -->
       <!-- intro section strat -->
-          <section  class='intro'>
+          <section  class='intro' id="intro">
             <div class="intro-top">
                 <div class="container">
                   <div class="row">
                     <div class="col-sm-12">
                       <div class="intro-wrapper text-center">
-                        <div class="logo-area">
+                        <div  class="logo-area">
                           <a  href="#"><img src="img/logo.png" data-rjs="img/2x/logo.png" alt=""></a>
                         </div>
                         <div class="text-area text-white">
@@ -97,7 +183,7 @@
           </section>
       <!-- offer-countdown end-->
       <!-- best service section start -->
-          <section  class="servive">
+          <section  class="servive" id="service">
             <div class="section-title text-center">
               <div class="container">
                 <div class="row">
@@ -110,19 +196,19 @@
             <div class="service-area">
               <div class="container">
                 <div class="row magic-box">
-                  <div class="col-sm-4 magic-box-item text-center">
+                  <div class="col-sm-4 text-center magic-box-item">
                     <div class="single-service text-center">
                       <div class="service-icon">
                         <i class="icofont icofont-responsive"></i>
                       </div>
                       <div class="service-content">
                         <h3 class="service-title">Responsive Design</h3>
-                        <p>But few of the human race die of old age. Besides the thousand and one diseases  flesh is heir to, and the disease which Mrs.See how long a man should. </p>
+                        <p>But few of the human race die of old age. Besides the thousand and one diseases  flesh is heir to, and the disease which Mrs.See how long a man should.</p>
                       </div>
                     </div>
                     <a href="#" target="_blank" class="read-more-btn red">Read More</a>
                   </div> <!-- col end -->
-                  <div class="col-sm-4 magic-box-item text-center">
+                  <div class="col-sm-4 text-center magic-box-item">
                     <div class="single-service text-center">
                       <div class="service-icon green">
                         <i class="icofont icofont-pixels"></i>
@@ -146,298 +232,118 @@
                     </div>
                     <a href="#" target="_blank" class="read-more-btn blue">Read More</a>
                   </div> <!-- col end -->
+                  <div class="col-sm-4 magic-box-item text-center">
+                    <div class="single-service text-center">
+                      <div class="service-icon turquoise">
+                        <i class="icofont icofont-ui-browser"></i>
+                      </div>
+                      <div class="service-content">
+                        <h3 class="service-title">Cross Browser Support</h3>
+                        <p>But few of the human race die of old age. Besides the thousand and one diseases  flesh is heir to, and the disease which Mrs.See how long a man should. </p>
+                      </div>
+                    </div>
+                  <a href="#" target="_blank" class="read-more-btn turquoise">Read More</a>
+                  </div> <!-- col end -->
+                  <div class="col-sm-4 magic-box-item text-center">
+                    <div class="single-service text-center">
+                      <div class="service-icon brown">
+                        <i class="icofont icofont-ui-touch-phone"></i>
+                      </div>
+                      <div class="service-content">
+                        <h3 class="service-title">Mobile Version</h3>
+                        <p>But few of the human race die of old age. Besides the thousand and one diseases  flesh is heir to, and the disease which Mrs.  Let us see how  a man. </p>
+                      </div>
+                    </div>
+                  <a href="#" target="_blank" class="read-more-btn brown">Read More</a>
+                  </div> <!-- col end -->
+                  <div class="col-sm-4 magic-box-item text-center">
+                    <div class="single-service text-center">
+                      <div class="service-icon olive">
+                        <i class="icofont icofont-color-bucket"></i>
+                      </div>
+                      <div class="service-content">
+                        <h3 class="service-title">Multi Color Supports</h3>
+                        <p>But few of the human race die of old age. Besides the thousand and one diseases  flesh is heir to, and the disease which Mrs.  Let us see how long. </p>
+                      </div>
+                    </div>
+                    <a href="#" target="_blank" class="read-more-btn olive">Read More</a>
+                  </div> <!-- col end -->
                 </div>
               </div>
             </div>
           </section>
       <!-- best service section end -->
-      <!-- Newsletter area start -->
-          <section  class="newsletter">
+      <!-- testimonial area start -->
+          <section  class="testimonial" id="testimonial">
             <div class="section-title text-center">
               <div class="container">
                 <div class="row">
                   <div class="col-sm-12">
-                    <h2>Surprise <span class="highlight text-white">Newsletter </span> </h2>
-                    <p class="text-white">But few of the human race die of old age. Besides the thousand and one diseases flesh is heir to, and the <br class="hidden-xs"> disease which Mrs. Let us see how long a man should live. </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <form class="newsletter-form">
-              <div class="container">
-                <div class="row">
-                  <div class="col-sm-5">
-                    <input type="text" class="name" placeholder="Type your Name">
-                  </div>
-                  <div class="col-sm-5">
-                    <input type="email" class="email" placeholder="Type your Email">
-                  </div>
-                  <div class="col-sm-2">
-                    <input type="submit" class="submit" value="SUBSCRIBE ">
-                  </div>
-                </div>
-              </div>
-            </form>
-          </section>
-      <!-- Newsletter area end -->
-      <!-- featured area start -->
-          <section  class="featured">
-            <div class="section-title text-center">
-              <div class="container">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <h2>Our Service <span class="highlight">Featured</span></h2>
+                    <h2>Client <span class="highlight"> Testimonials</span> </h2>
                   </div>
                 </div>
               </div>
             </div> <!-- section title end -->
-            <div class="featured-items">
-              <div class="container">
-                <div class="row magic-box">
-                  <div class="col-sm-4 magic-box-item">
-                    <div class="featured-item text-center">
-                      <div class="featured-icon">
-                        <i class="icofont icofont-atom"></i>
-                      </div>
-                      <div class="featured-item-content">
-                        <h3>Multi Color Display</h3>
-                        <p>Let us see how long. But few of the human race die of old age. Besides the thousand and one diseases  flesh is heir to, and the disease which Mrs.   </p>
-                      </div>
-                    </div>
-                  </div> <!-- col end -->
-                  <div class="col-sm-4 magic-box-item">
-                    <div class="featured-item text-center">
-                      <div class="featured-icon">
-                        <i class="icofont icofont-layout"></i>
-                      </div>
-                      <div class="featured-item-content">
-                        <h3>Multi Layout</h3>
-                        <p>But few of the human race die of old age. Besides the thousand and one diseases  flesh is heir to, and the disease which Mrs.  Let us see how long. </p>
-                      </div>
-                    </div>
-                  </div> <!-- col end -->
-                  <div class="col-sm-4 magic-box-item">
-                    <div class="featured-item text-center">
-                      <div class="featured-icon">
-                        <i class="icofont icofont-pixels"></i>
-                      </div>
-                      <div class="featured-item-content">
-                        <h3>Pixel Perfect Design</h3>
-                        <p>But few of the human race die of old age. Besides the thousand and one diseases  flesh is heir to, and the disease which Mrs.  Let us see how long. </p>
-                      </div>
-                    </div>
-                  </div> <!-- col end -->
-                  <div class="col-sm-4 magic-box-item">
-                    <div class="featured-item text-center">
-                      <div class="featured-icon">
-                        <i class="icofont icofont-ui-edit"></i>
-                      </div>
-                      <div class="featured-item-content">
-                        <h3>Easy To Customize</h3>
-                        <p>But few of the human race die of old age. Besides the thousand and one diseases  flesh is heir to, and the disease which Mrs.  Let us see how long. </p>
-                      </div>
-                    </div>
-                  </div> <!-- col end -->
-                  <div class="col-sm-4 magic-box-item">
-                    <div class="featured-item text-center">
-                      <div class="featured-icon">
-                        <i class="icofont icofont-send-mail"></i>
-                      </div>
-                      <div class="featured-item-content">
-                        <h3>Mailchimp Support</h3>
-                        <p>But few of the human race die of old age. Besides the thousand and one diseases  flesh is heir to, and the disease which Mrs.  Let us see how long. </p>
-                      </div>
-                    </div>
-                  </div> <!-- col end -->
-                  <div class="col-sm-4 magic-box-item">
-                    <div class="featured-item text-center">
-                      <div class="featured-icon">
-                        <i class="icofont icofont-cart"></i>
-                      </div>
-                      <div class="featured-item-content">
-                        <h3>Ecommerce  Friendly</h3>
-                        <p>But few of the human race die of old age. Besides the thousand and one diseases  flesh is heir to, and the disease which Mrs.  Let us see how long. </p>
-                      </div>
-                    </div>
-                  </div> <!-- col end -->
-                </div>
-              </div>
-            </div>
-          </section>
-      <!-- featured area end -->
-      <!-- testimonial area start -->
-          <section class="testimonial">
             <div class="testimonial-details">
               <div class="container">
                 <div class="row">
-                  <div class="col-sm-12">
-                    <div class="single-testmonial text-center">
-                      <div  class="testmonial-thumb">
-                        <img src="img/testmonial/2.jpg" data-rjs="img/2x/testmonial/2.jpg" alt="">
+                  <div class="testimonial-carousel">
+                    <div class="col-sm-12">
+                      <div class="single-testmonial text-center">
+                        <div  class="testmonial-thumb">
+                          <img  src="img/testmonial/1.jpg" data-rjs="img/2x/testmonial/1.jpg" alt="">
+                        </div>
+                        <div class="testmonial-text">
+                          <h3 class="name">John Neo Smith</h3>
+                          <span class="desi">Product Tester</span>
+                          <p>Far far away, behind the word mountains, far from thecountries  Vokalia and Consonantia,there live the blind texts. Separated  they live in Bookmarksgrove right at the coast Far far away, behind the word mountains far from thecountries</p>
+                        </div>
                       </div>
-                      <div class="testmonial-text">
-                        <h3>Jona Than Lee</h3>
-                        <span class="desi">Web Developer</span>
-                        <p >Far far away, behind the word mountains, far from thecountries  Vokalia and Consonantia,there live the blind texts. Separated  they live in Bookmarksgrove right at the coast Far far away, behind the word mountains far from thecountries</p>
+                    </div> <!-- col end -->
+                    <div class="col-sm-12">
+                      <div class="single-testmonial text-center">
+                        <div  class="testmonial-thumb">
+                          <img    src="img/testmonial/2.jpg" data-rjs="img/2x/testmonial/2.jpg" alt="">
+                        </div>
+                        <div class="testmonial-text">
+                          <h3 class="name">John Neo Smith</h3>
+                          <span class="desi">Product Tester</span>
+                          <p>Far far away, behind the word mountains, far from thecountries  Vokalia and Consonantia,there live the blind texts. Separated  they live in Bookmarksgrove right at the coast Far far away, behind the word mountains far from thecountries</p>
+                        </div>
                       </div>
-                    </div>
+                    </div> <!-- col end -->
+                    <div class="col-sm-12">
+                      <div class="single-testmonial text-center">
+                        <div  class="testmonial-thumb">
+                          <img src="img/testmonial/3.jpg" data-rjs="img/2x/testmonial/3.jpg" alt="">
+                        </div>
+                        <div class="testmonial-text">
+                          <h3 class="name">John Neo Smith</h3>
+                          <span class="desi">Product Tester</span>
+                          <p>Far far away, behind the word mountains, far from thecountries  Vokalia and Consonantia,there live the blind texts. Separated  they live in Bookmarksgrove right at the coast Far far away, behind the word mountains far from thecountries</p>
+                        </div>
+                      </div>
+                    </div> <!-- col end -->
+                    <div class="col-sm-12">
+                      <div class="single-testmonial text-center">
+                        <div  class="testmonial-thumb">
+                          <img  src="img/testmonial/4.jpg" data-rjs="img/2x/testmonial/4.jpg" alt="">
+                        </div>
+                        <div class="testmonial-text">
+                          <h3 class="name">John Neo Smith</h3>
+                          <span class="desi">Product Tester</span>
+                          <p>Far far away, behind the word mountains, far from thecountries  Vokalia and Consonantia,there live the blind texts. Separated  they live in Bookmarksgrove right at the coast Far far away, behind the word mountains far from thecountries</p>
+                        </div>
+                      </div>
+                    </div> <!-- col end -->
                   </div>
                 </div>
               </div>
             </div>
           </section>
-      <!-- testimonial area end -->
-      <!-- featured-product area start -->
-          <section  class="featured-product">
-            <div class="section-title text-center">
-              <div class="container">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <h2><span class="highlight">Our Featured</span> Products</h2>
-                  </div>
-                </div>
-              </div>
-            </div> <!-- section title end -->
-            <div class="featured-products-area">
-              <div class="container">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <div class="single-product text-center">
-                      <div class="product-thumb">
-                        <img class='primary' data-rjs="img/2x/products/p1.jpg" src="img/products/p1.jpg" alt="">
-                        <img class='secondary' data-rjs="img/2x/products/p2.jpg" src="img/products/p2.jpg" alt="">
-                      </div>
-                      <div class="product-details">
-                        <h3>Sleeve High Neck Shoe</h3>
-                        <p>Etia processus non habent claritatem insitam est usus legentis in iis qui facit eorum habent claritatem.</p>
-                        <div class="action">
-                          <span class="price">$210 <span class="current">$199</span></span>
-                          <div class="button-area">
-                            <a href="#" class="intro-btn">Buy Now</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div> <!-- col-end -->
-                  <div class="col-sm-4">
-                    <div class="single-product text-center">
-                      <div class="product-thumb">
-                        <img class='primary' data-rjs="img/2x/products/p3.jpg" src="img/products/p3.jpg" alt="">
-                        <img class='secondary' data-rjs="img/2x/products/p4.jpg" src="img/products/p4.jpg" alt="">
-                      </div>
-                      <div class="product-details">
-                        <h3>Etia processus dynamicus</h3>
-                        <p>Etia processus non habent claritatem insitam est usus legentis in iis qui facit eorum habent claritatem.</p>
-                        <div class="action">
-                          <span class="price">$210 <span class="current">$199</span></span>
-                          <div class="button-area">
-                            <a href="#" class="intro-btn">Buy Now</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div> <!-- col-end -->
-                  <div  class="col-sm-4">
-                    <div class="single-product text-center">
-                      <div class="product-thumb">
-                        <img class='primary' data-rjs="img/2x/products/p5.jpg" src="img/products/p5.jpg" alt="">
-                        <img class='secondary' data-rjs="img/2x/products/p6.jpg" src="img/products/p6.jpg" alt="">
-                      </div>
-                      <div class="product-details">
-                        <h3>Proin lectus ipsum</h3>
-                        <p>Etia processus non habent claritatem insitam est usus legentis in iis qui facit eorum habent claritatem.</p>
-                        <div class="action">
-                          <span class="price">$210 <span class="current">$199</span></span>
-                          <div class="button-area">
-                            <a href="#" class="intro-btn">Buy Now</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div> <!-- col-end -->
-                  <div  class="col-sm-4">
-                    <div class="single-product text-center">
-                      <div class="product-thumb">
-                        <img class='primary' data-rjs="img/2x/products/p7.jpg" src="img/products/p7.jpg" alt="">
-                        <img class='secondary' data-rjs="img/2x/products/p8.jpg" src="img/products/p8.jpg" alt="">
-                      </div>
-                      <div class="product-details">
-                        <h3>Apples for Processing</h3>
-                        <p>Etia processus non habent claritatem insitam est usus legentis in iis qui facit eorum habent claritatem.</p>
-                        <div class="action">
-                          <span class="price">$210 <span class="current">$199</span></span>
-                          <div class="button-area">
-                            <a href="#" class="intro-btn">Buy Now</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div> <!-- col-end -->
-                  <div  class="col-sm-4">
-                    <div class="single-product text-center">
-                      <div class="product-thumb">
-                        <img class='primary' data-rjs="img/2x/products/p9.jpg" src="img/products/p9.jpg" alt="">
-                        <img class='secondary' data-rjs="img/2x/products/p10.jpg" src="img/products/p10.jpg" alt="">
-                      </div>
-                      <div class="product-details">
-                        <h3>Proin lectus ipsum</h3>
-                        <p>Etia processus non habent claritatem insitam est usus legentis in iis qui facit eorum habent claritatem.</p>
-                        <div class="action">
-                          <span class="price">$210 <span class="current">$199</span></span>
-                          <div class="button-area">
-                            <a href="#" class="intro-btn">Buy Now</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div> <!-- col-end -->
-                  <div  class="col-sm-4">
-                    <div class="single-product text-center">
-                      <div class="product-thumb">
-                        <img class='primary' data-rjs="img/2x/products/p11.jpg" src="img/products/p11.jpg" alt="">
-                        <img class='secondary' data-rjs="img/2x/products/p12.jpg" src="img/products/p12.jpg" alt="">
-                      </div>
-                      <div class="product-details">
-                        <h3>Apples for Processing</h3>
-                        <p>Etia processus non habent claritatem insitam est usus legentis in iis qui facit eorum habent claritatem.</p>
-                        <div class="action">
-                          <span class="price">$210 <span class="current">$199</span></span>
-                          <div class="button-area">
-                            <a href="#" class="intro-btn">Buy Now</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div> <!-- col-end -->
-                </div>
-              </div>
-            </div>
-          </section>
-      <!-- featured-product area start -->
       <!-- testimonial area start -->
-          <section  class="testimonial">
-            <div class="testimonial-details">
-              <div class="container">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div class="single-testmonial text-center">
-                      <div  class="testmonial-thumb">
-                        <img  src="img/testmonial/3.jpg" data-rjs="img/2x/testmonial/3.jpg" alt="">
-                      </div>
-                      <div class="testmonial-text">
-                        <h3 class="name">James Lee Bond</h3>
-                        <span class="desi">Graphic Designer</span>
-                        <p>Far far away, behind the word mountains, far from thecountries  Vokalia and Consonantia,there live the blind texts. Separated  they live in Bookmarksgrove right at the coast Far far away, behind the word mountains far from thecountries</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-      <!-- testimonial area end -->
       <!-- our-product area start -->
-          <section  class="our-product">
+          <section id="product"  class="our-product">
             <div class="section-title text-center">
               <div class="container">
                 <div class="row">
@@ -504,10 +410,44 @@
                   <div class="col-sm-6">
                     <div class="single-product">
                       <div class="product-thumb">
-                        <img data-rjs="img/2x/products/p7.jpg" src="img/products/p7.jpg" alt="">
+                        <img data-rjs="img/2x/products/p6.jpg" src="img/products/p6.jpg" alt="">
                       </div>
                       <div class="product-details">
-                        <h3>Proin lectus ipsum</h3>
+                        <h3>Proin lectus ipsumlo</h3>
+                        <p>Etia processus non habent claritatem insitam est usus legentis in iis qui facit eorum habent claritatem.</p>
+                        <div class="action">
+                          <span class="price">$210 <span class="current">$199</span></span>
+                          <div class="button-area">
+                            <a href="#" class="intro-btn">Buy Now</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> <!-- col end -->
+                  <div class="col-sm-6">
+                    <div class="single-product">
+                      <div class="product-thumb">
+                        <img data-rjs="img/2x/products/p6.jpg" src="img/products/p6.jpg" alt="">
+                      </div>
+                      <div class="product-details">
+                        <h3>Apples for Processing</h3>
+                        <p>Etia processus non habent claritatem insitam est usus legentis in iis qui facit eorum habent claritatem.</p>
+                        <div class="action">
+                          <span class="price">$210 <span class="current">$199</span></span>
+                          <div class="button-area">
+                            <a href="#" class="intro-btn">Buy Now</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> <!-- col end -->
+                  <div class="col-sm-6">
+                    <div class="single-product">
+                      <div class="product-thumb">
+                        <img data-rjs="img/2x/products/p5.jpg" src="img/products/p5.jpg" alt="">
+                      </div>
+                      <div class="product-details">
+                        <h3>Proin lectus ipsumno</h3>
                         <p>Etia processus non habent claritatem insitam est usus legentis in iis qui facit eorum habent claritatem.</p>
                         <div class="action">
                           <span class="price">$210 <span class="current">$199</span></span>
@@ -523,30 +463,37 @@
             </div>
           </section>
       <!-- our products-area end -->
-      <!-- testimonial area start -->
-          <section  class="testimonial">
-            <div class="testimonial-details">
+      <!-- Newsletter area start -->
+          <section  class="newsletter" id="newsletter">
+            <div class="section-title text-center">
               <div class="container">
                 <div class="row">
                   <div class="col-sm-12">
-                    <div class="single-testmonial text-center">
-                      <div  class="testmonial-thumb">
-                        <img  src="img/testmonial/4.jpg" data-rjs="img/2x/testmonial/4.jpg" alt="">
-                      </div>
-                      <div class="testmonial-text">
-                        <h3 class="name">Jonathan  Neo John</h3>
-                        <span class="desi">Physician at yLab</span>
-                        <p>Far far away, behind the word mountains, far from thecountries  Vokalia and Consonantia,there live the blind texts. Separated  they live in Bookmarksgrove right at the coast Far far away, behind the word mountains far from thecountries</p>
-                      </div>
-                    </div>
+                    <h2>Surprise <span class="highlight text-white">Newsletter </span> </h2>
+                    <p class="text-white">But few of the human race die of old age. Besides the thousand and one diseases flesh is heir to, and the <br class="hidden-xs"> disease which Mrs. Let us see how long a man should live. </p>
                   </div>
                 </div>
               </div>
             </div>
+            <form class="newsletter-form">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-5">
+                    <input type="text" class="name" placeholder="Type your Name">
+                  </div>
+                  <div class="col-sm-5">
+                    <input type="email" class="email" placeholder="Type your Email">
+                  </div>
+                  <div class="col-sm-2">
+                    <input type="submit" class="submit" value="SUBSCRIBE ">
+                  </div>
+                </div>
+              </div>
+            </form>
           </section>
-      <!-- testimonial area end -->
+      <!-- Newsletter area end -->
       <!-- faq area start -->
-          <section  class="faq">
+          <section  class="faq" id="faq">
             <div class="section-title text-center">
               <div class="container">
                 <div class="row">
@@ -740,36 +687,14 @@
             </div>
           </section>
       <!-- faq area end -->
-      <!-- testimonial area start -->
-          <section  class="testimonial">
-            <div class="testimonial-details">
-              <div class="container">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div class="single-testmonial text-center">
-                      <div  class="testmonial-thumb">
-                        <img  src="img/testmonial/5.jpg" data-rjs="img/2x/testmonial/5.jpg" alt="">
-                      </div>
-                      <div class="testmonial-text">
-                        <h3 class="name">John Neo Coner</h3>
-                        <span class="desi">Physician at yLab</span>
-                        <p>Far far away, behind the word mountains, far from thecountries  Vokalia and Consonantia,there live the blind texts. Separated  they live in Bookmarksgrove right at the coast Far far away, behind the word mountains far from thecountries</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-      <!-- testimonial area end -->
       <!-- footer start -->
-          <footer>
+          <footer id='footer'>
             <div class="container">
               <div class="row">
                 <div class="col-lg-12">
                   <div class="footer-wrapper text-center">
                     <div class="footer-logo">
-                      <a href="#"><img   src="img/logo.png" data-rjs="img/2x/logo.png" alt=""></a>
+                      <a href="#"><img  src="img/logo.png" data-rjs="img/2x/logo.png" alt=""></a>
                     </div>
                     <div  class="footer-social-icon">
                       <a href="#"><i class="icofont icofont-social-twitter"></i></a>
@@ -778,7 +703,7 @@
                       <a href="#"><i class="icofont icofont-brand-linkedin"></i></a>
                       <a href="#"><i class="icofont icofont-social-skype"></i></a>
                     </div>
-                    <div  class="copyright-text">
+                    <div class="copyright-text">
                       <span>Copyright (c) 2016 <a target="_blank" href="http://puffinthemes.com/">Puffin Themes</a> All Rights Reserved.</span>
                     </div>
                   </div>
@@ -795,17 +720,27 @@
         <script src="asset/js/vendor/jquery-1.12.0.min.js"></script>
 		<!-- bootstrap js -->
         <script src="asset/js/bootstrap.min.js"></script>
+		<!-- owl.carousel js -->
+        <script src="asset/js/owl.carousel.min.js"></script>
 		<!-- countdown js -->
         <script src="asset/js/jquery.countdown.min.js"></script>
+        <!-- jquery-nav js -->
+        <script src="asset/js/jquery.nav.js"></script>
+        <!-- jquery.easing js -->
+        <script src="asset/js/jquery.easing.1.3.js"></script>
         <!-- retina js -->
         <script src="asset/js/retina.min.js"></script>
 		<!-- jquery-nicescroll js -->
         <script src="asset/js/jquery.nicescroll.min.js"></script>
 		<!-- wow js -->
         <script src="asset/js/wow.min.js"></script>
+    <!-- jquery meanmenu js -->
+        <script src="asset/js/jquery.meanmenu.js"></script>
 		<!-- plugins js -->
         <script src="asset/js/plugins.js"></script>
 		<!-- main js -->
         <script src="asset/js/main.js"></script>
+		<!-- index-menu js -->
+        <script src="asset/js/index-menu.js"></script>
     </body>
 </html>

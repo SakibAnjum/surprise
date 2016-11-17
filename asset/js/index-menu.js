@@ -30,9 +30,9 @@
 	    itemsTablet: [768,1],
 	    itemsMobile : [479,1],
   });
-
-
-//=> Scroll Header Activation
+// Meanmenu js activation
+$('.mobile-menu-area nav#manu-active div').meanmenu({meanScreenWidth:"767",meanMenuContainer:".mobile-menu",});
+//Scroll Header Activation
 var mywindow = $(window);
 var mypos = 0;
 var up = false;

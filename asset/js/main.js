@@ -8,7 +8,6 @@
 
 
 
-
 //=> RetinaJs Activation
 retinajs();
 
@@ -29,6 +28,7 @@ $('[data-countdown]').each(function() {
 
 //=> wow js activation
  new WOW().init();
+
 
 
 //=> ScrollUp Activation
